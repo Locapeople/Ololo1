@@ -14,6 +14,7 @@ public class TestRadio {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void setNextStation2() {
         Radio radio = new Radio();
@@ -40,6 +41,7 @@ public class TestRadio {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void setPrevStation2() {
         Radio radio = new Radio();
@@ -66,6 +68,7 @@ public class TestRadio {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void setStation2() {
         Radio radio = new Radio();
@@ -78,6 +81,7 @@ public class TestRadio {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void setVolumeUp() {
         Radio radio = new Radio();
@@ -90,6 +94,7 @@ public class TestRadio {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void setVolumeUp2() {
         Radio radio = new Radio();
@@ -103,6 +108,7 @@ public class TestRadio {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void setVolumeDown() {
         Radio radio = new Radio();
@@ -115,6 +121,7 @@ public class TestRadio {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     void setVolumeDown2() {
         Radio radio = new Radio();

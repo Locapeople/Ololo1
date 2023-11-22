@@ -5,33 +5,36 @@ public class Radio {
     int maxVolume = 100;
     int stationNumber = minStation;
     int volume = minVolume;
-    void Next(){
+
+    void Next() {
         if (stationNumber < maxStation) {
             stationNumber = stationNumber + 1;
-        }
-        else {
+        } else {
             stationNumber = minStation;
         }
     }
-    void Prev(){
+
+    void Prev() {
         if (stationNumber > minStation) {
             stationNumber = stationNumber - 1;
-        }
-        else {
+        } else {
             stationNumber = maxStation;
         }
     }
-    void SetStation(int number){
+
+    void SetStation(int number) {
         if (number >= minStation && number <= maxStation) {
             stationNumber = number;
         }
     }
-    void VolumeUp(){
+
+    void VolumeUp() {
         if (volume < maxVolume) {
             volume = volume + 1;
         }
     }
-    void VolumeDown(){
+
+    void VolumeDown() {
         if (volume > minVolume) {
             volume = volume - 1;
         }
