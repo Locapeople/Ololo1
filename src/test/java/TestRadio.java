@@ -83,6 +83,19 @@ public class TestRadio {
     }
 
     @Test
+    void setStation3() {
+        Radio radio = new Radio();
+
+        int expected = 0;
+
+        radio.SetStation(-10);
+
+        int actual = radio.stationNumber;
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     void setVolumeUp() {
         Radio radio = new Radio();
 
