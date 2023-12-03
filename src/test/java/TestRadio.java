@@ -84,7 +84,7 @@ public class TestRadio {
 
     @Test
     void setStation3() {
-        Radio radio = new Radio();
+        Radio radio = new Radio(20);
 
         int expected = 0;
 
