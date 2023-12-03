@@ -1,14 +1,23 @@
 public class Radio {
     private static final int minStation = 0;
-    private static final int maxStation = 9;
+    private int maxStation;
     private static final int minVolume = 0;
     private static final int maxVolume = 100;
     private int stationNumber = minStation;
     private int volume = minVolume;
 
+    public Radio() {
+        this.maxStation = 9;
+    }
+
+    public Radio(int numStations) {
+        this.maxStation = numStations - 1;
+    }
+
     public int getStationNumber() {
         return stationNumber;
     }
+
     public void next() {
         if (stationNumber < maxStation) {
             stationNumber = stationNumber + 1;
